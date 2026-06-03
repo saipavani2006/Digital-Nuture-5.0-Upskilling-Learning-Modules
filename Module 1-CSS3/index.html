@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body{
+        background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <nav>
+
+    <ul>
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#events">Events</a></li>
+
+        <li><a href="#register">Register</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+    </nav>
+    <!--Main-->
+    <section>
+        <section id="home">
+        <div id="welcomeBanner">
+            Welcome to Local Community Portal
+            <span style="color:red; font-weight:bold;">
+                Special Offer!
+            </span>
+        </div>
+    </section>
+    <section id="events">
+        <h2 style="color:red;">Upcoming Events</h2>
+
+    <div class="gallery">
+
+    <div class="eventCard">
+        <img src="images/musicevent.jpg" alt="Music Fest">
+        <p>Music Fest</p>
+    </div>
+
+    <div class="eventCard">
+        <img src="images/foodfestival.jpg" alt="Food Carnival">
+        <p>Food Carnival</p>
+    </div>
+
+    <div class="eventCard">
+        <img src="images/sportsevent.jpg" alt="Sports Meet">
+        <p>Sports Meet</p>
+    </div>
+
+    <div class="eventCard">
+        <img src="images/danceevent.jpg" alt="Dance Show">
+        <p>Dance Show</p>
+    </div>
+
+    <div class="eventCard">
+        <img src="images/communitymeetup.jpg" alt="Community Meetup">
+        <p>Community Meetup</p>
+    </div>
+
+    <div class="eventCard">
+        <img src="images/techseminar.jpg" alt="Tech Seminar">
+        <p>Tech Seminar</p>
+    </div>
+
+</div>
+    </section>
+    <section>
+
+    <h2>Event Registration</h2>
+
+    <form>
+
+        <input type="text"
+               placeholder="Enter Name"
+               required
+               autofocus>
+
+        <br><br>
+
+        <input type="email"
+               placeholder="Enter Email"
+               required>
+
+        <br><br>
+
+        <input type="date" required>
+
+        <br><br>
+
+        <select>
+            <option>Music</option>
+            <option>Sports</option>
+            <option>Seminar</option>
+        </select>
+
+        <br><br>
+
+        <textarea placeholder="Message"></textarea>
+
+        <br><br>
+
+        <button type="submit" onclick="displayMessage()">
+            Register
+        </button>
+
+    </form>
+    <section>
+
+        <h2>Event Promo Video</h2>
+
+        <video width="400" controls oncanplay="videoReady()">
+
+        <source src="vedios/promo.mp4.mp4" type="video/mp4">
+
+        </video>
+
+        <p id="videoMessage"></p>
+
+    </section>
+    <section>
+
+        <h2>Find Nearby Events</h2>
+
+        <button onclick="getLocation()">
+            Find Nearby Events
+        </button>
+
+        <p id="location"></p>
+
+    </section>
+</section>
+    <section id="contact">
+        <h2>Contact Section</h2>
+        <p> For more details use event123@gmail.com </p>
+    </section>
+    <section class="newsSection">
+
+<h2>Community Bulletin</h2>
+
+<p>
+
+Community events help residents connect and build relationships.
+Local festivals, awareness campaigns, and social gatherings improve
+community engagement and encourage participation from citizens.
+
+The city council regularly organizes educational workshops,
+health camps, sports activities, and cultural programs for all age groups.
+
+</p>
+
+</section>
+    <!--Footer-->
+    <footer>
+        <p> @Community Hub </p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>

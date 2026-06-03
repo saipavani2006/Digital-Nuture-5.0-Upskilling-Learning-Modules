@@ -1,0 +1,275 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#f4f4f4;
+    background-image:url("images/bg.jpg");
+    background-size:cover;
+    color:#222;
+}
+
+#mainHeader{
+    background:linear-gradient(to right,#2d6a4f,#40916c);
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav{
+    background-color:#1b4332;
+    padding:15px;
+}
+
+nav ul{
+    list-style-type:none;
+    text-align:center;
+}
+
+nav li{
+    display:inline-block;
+    margin:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px;
+}
+
+/* Link Pseudo Classes */
+
+nav a:hover{
+    background-color:yellow;
+    color:black;
+}
+
+nav a:active{
+    color:red;
+}
+
+nav a:visited{
+    color:lightgray;
+}
+
+/* Section Styling */
+
+section{
+    background-color:rgba(255,255,255,0.9);
+    margin:20px;
+    padding:20px;
+    border-radius:10px;
+}
+
+/* Element Selector */
+
+h2{
+    color:#1b4332;
+    margin-bottom:15px;
+}
+
+/* Grouping Selector */
+
+h3,p{
+    line-height:1.8;
+    letter-spacing:1px;
+}
+
+/* =========================
+   GALLERY SECTION
+========================= */
+
+.gallery{
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+
+    margin-top:20px;
+}
+
+/* =========================
+   EVENT CARD
+========================= */
+
+.eventCard{
+
+    width:260px;
+    background:white;
+
+    border-radius:15px;
+    overflow:hidden;
+
+    text-align:center;
+
+    padding:15px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+
+    transition:transform 0.3s;
+}
+
+.eventCard:hover{
+
+    transform:translateY(-5px);
+}
+
+/* =========================
+   IMAGE STYLING
+========================= */
+
+.eventCard img{
+
+    width:100%;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    border:4px solid #2d6a4f;
+}
+
+/* =========================
+   EVENT TITLE
+========================= */
+
+.eventCard p{
+
+    margin-top:10px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:#1b4332;
+}
+
+
+@media screen and (max-width:768px){
+
+    .gallery{
+
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .eventCard{
+
+        width:90%;
+    }
+
+    .eventCard img{
+
+        height:220px;
+    }
+}
+form input,
+form textarea,
+form select{
+
+    width:60%;
+    padding:10px;
+    margin-top:10px;
+    border:1px solid gray;
+}
+
+form input:focus{
+    outline:3px solid green;
+}
+
+button{
+    background-color:#2d6a4f;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#1b4332;
+}
+.newsSection{
+
+    column-count:2;
+    column-gap:30px;
+    column-rule:1px solid gray;
+}
+.hiddenBox{
+    visibility:hidden;
+}
+
+.noneBox{
+    display:none;
+}
+
+
+footer{
+    background-color:#1b4332;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+@media screen and (max-width:768px){
+
+    nav li{
+        display:block;
+        margin:10px 0;
+    }
+
+    img{
+        width:150px;
+        height:100px;
+    }
+
+    body{
+        font-size:14px;
+    }
+
+    form input,
+    form textarea,
+    form select{
+        width:90%;
+    }
+}
+/* Gallery Layout */
+
+.gallery{
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+/* Event Cards */
+
+.eventCard{
+
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    width:250px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Images */
+
+.eventCard img{
+
+    width:100%;
+    height:180px;
+    object-fit:cover;
+
+    border-radius:10px;
+    border:4px solid #2d6a4f;
+}
